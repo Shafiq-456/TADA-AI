@@ -452,10 +452,7 @@ export function LandingPage() {
         style={{ backdropFilter: 'blur(20px)', background: 'rgba(5, 5, 10, 0.8)' }}
       >
         <div className="flex items-center gap-2.5">
-          <div className="w-8 h-8 rounded-lg flex items-center justify-center animate-pulse-slow"
-            style={{ background: 'linear-gradient(135deg, #8B5CF6, #EC4899)' }}>
-            <Zap size={16} className="text-white" />
-          </div>
+          <img src="/logo.png" alt="TADA AI Logo" className="w-8 h-8 rounded-lg object-contain" />
           <span className="font-bold text-text text-lg tracking-tight">TADA AI</span>
         </div>
 
@@ -797,10 +794,7 @@ export function LandingPage() {
       {/* Footer */}
       <footer className="border-t border-border px-6 py-8 text-center">
         <div className="flex items-center justify-center gap-2 mb-3">
-          <div className="w-6 h-6 rounded-md flex items-center justify-center animate-pulse-slow"
-            style={{ background: 'linear-gradient(135deg, #8B5CF6, #EC4899)' }}>
-            <Zap size={12} className="text-white" />
-          </div>
+          <img src="/logo.png" alt="TADA AI Logo" className="w-6 h-6 rounded-md object-contain" />
           <span className="font-bold text-text text-sm">TADA AI</span>
         </div>
         <p className="text-text-subtle text-xs">

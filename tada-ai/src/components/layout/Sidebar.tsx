@@ -69,10 +69,7 @@ export function Sidebar() {
               exit={{ opacity: 0 }}
               className="flex items-center gap-2.5"
             >
-              <div className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0"
-                style={{ background: 'linear-gradient(135deg, #8B5CF6, #EC4899)' }}>
-                <Zap size={16} className="text-white" />
-              </div>
+              <img src="/logo.png" alt="Logo" className="w-8 h-8 rounded-lg object-contain flex-shrink-0" />
               <div>
                 <div className="text-base font-bold text-text tracking-tight">TADA AI</div>
                 <div className="text-[10px] text-text-muted leading-none">Business Intelligence</div>
@@ -85,9 +82,8 @@ export function Sidebar() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               className="w-8 h-8 rounded-lg flex items-center justify-center mx-auto"
-              style={{ background: 'linear-gradient(135deg, #8B5CF6, #EC4899)' }}
             >
-              <Zap size={16} className="text-white" />
+              <img src="/logo.png" alt="Logo" className="w-8 h-8 rounded-lg object-contain mx-auto" />
             </motion.div>
           )}
         </AnimatePresence>
