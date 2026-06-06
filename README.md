@@ -109,10 +109,14 @@ Authentication:
 ### Landing Page
 
 Modern AI-powered landing page featuring authentication and platform introduction.
+<img width="1280" height="694" alt="image" src="https://github.com/user-attachments/assets/b186cddd-1e5e-4e81-85c3-8fcccea761c6" />
+
 
 ### Dashboard
 
 Interactive analytics dashboard with forecasting, AI insights, reporting, and dataset management.
+<img width="1280" height="712" alt="image" src="https://github.com/user-attachments/assets/29ccb95d-9e2b-43bd-baef-ad5951f870b5" />
+
 
 ---
 
