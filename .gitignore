@@ -14,6 +14,7 @@ tada-ai/build/
 .env.local
 tada-ai/.env
 tada-backend/.env
+required_api_keys.txt
 
 # Python caching
 **/__pycache__/
