@@ -1,0 +1,55 @@
+========================================================================
+             TADA AI - APPLICATION FLOW & RUNTIME STRUCTURE
+========================================================================
+
+1. USER REGISTRATION & SIGN-IN
+   - Frontend: Renders Sign-In/Register tabs (Email & Password).
+   - Backend (/api/auth/login, /api/auth/register): Hashes passwords 
+     using bcrypt, stores user records in PostgreSQL (via Supabase),
+     and returns a JWT token.
+   - Session: JWT and User metadata are persisted in the browser's 
+     LocalStorage to protect private routes.
+
+2. DATASET INGESTION
+   - Frontend: Drag-and-drop file uploader (CSV, Excel, JSON).
+   - Backend (/api/datasets/upload): Ingests the file, profiles columns, 
+     detects structural data quality issues, and saves the file to
+     the local "uploads/" directory.
+
+3. QUALITY AUDITING & AUTO-CLEANING
+   - Frontend: Renders file details, completeness rates, and issues feed.
+   - Backend (/api/datasets/{id}/clean): Reruns data audits. When 
+     "Auto Clean" is clicked, it removes duplicates, replaces missing 
+     values, flags outliers (IQR/Z-score), and serializes the clean file.
+
+4. AUTOMATED ANALYTICS & ANOMALY DETECTIONS
+   - Backend (/api/analytics/{id}/kpi): Computes numeric averages, 
+     min/max, standard deviation, and percentage changes.
+   - Backend (/api/analytics/{id}/anomalies): Detects data spikes, dips, 
+     or irregularities, assigning severity classes (Critical, Medium, Low).
+   - Backend (/api/analytics/{id}/smart-insights): Produces strategic 
+     business insights, list of top opportunities, and risk warnings.
+
+5. DYNAMIC INTERACTIVE VISUALIZATIONS
+   - Backend (/api/datasets/{id}/auto-dashboard): Generates automated 
+     chart configs (Bar, Line, Area, Pie, Scatter) based on columns types.
+   - Frontend: Renders the custom visual charts using Recharts.
+
+6. STRATEGIC INSIGHTS & EXECUTIVE REPORTING
+   - Backend (/api/insights/{id}/recommendations): Evaluates key findings 
+     to provide structured ROI estimates, timeline, and priorities. Renders 
+     a 2x2 SWOT matrix.
+   - Backend (/api/insights/{id}/export-pdf): Uses ReportLab to compile 
+     statistics, findings, and SWOT lists into a downloadable PDF document.
+
+7. MACHINE LEARNING FORECASTING
+   - Frontend: User inputs model choice (Prophet, XGBoost, RF), target 
+     variable, and time range.
+   - Backend (/api/forecasts/run): Performs time-series forecasting. Returns 
+     forecast values, upper/lower confidence limits, model confidence 
+     indices, trend indicators, and explainability text.
+
+8. AI ANALYST (NATURAL LANGUAGE CHAT)
+   - Frontend: Renders interactive conversational interface.
+   - Backend (/api/ai/chat): Feeds data snippets and user queries to the 
+     Gemini API to return formatted markdown answers, charts, or tables.

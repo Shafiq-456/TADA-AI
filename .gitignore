@@ -1,0 +1,31 @@
+# Dependency directories
+tada-ai/node_modules/
+tada-backend/.venv/
+tada-backend/venv/
+venv/
+.venv/
+
+# Build outputs
+tada-ai/dist/
+tada-ai/build/
+
+# Local env files (prevent secret leaks)
+.env
+.env.local
+tada-ai/.env
+tada-backend/.env
+required_api_keys.txt
+
+# Python caching
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# User uploads & reports
+tada-backend/uploads/
+
+# OS metadata
+.DS_Store
+Thumbs.db
