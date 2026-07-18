@@ -16,6 +16,7 @@ class Settings(BaseSettings):
     # GitHub OAuth
     GITHUB_CLIENT_ID: str = ""
     GITHUB_CLIENT_SECRET: str = ""
+    FRONTEND_URL: str = "http://localhost:4001"
 
     # AI
     GROQ_API_KEY: str = ""

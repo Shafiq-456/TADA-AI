@@ -218,7 +218,7 @@ async def github_login(data: GitHubLoginRequest, db: Session = Depends(get_db)):
                 "client_id": settings.GITHUB_CLIENT_ID,
                 "client_secret": settings.GITHUB_CLIENT_SECRET,
                 "code": data.code,
-                "redirect_uri": "http://localhost:4001/auth/callback"
+                "redirect_uri": f"{settings.FRONTEND_URL}/auth/callback"
             },
             headers={"Accept": "application/json"}
         )
