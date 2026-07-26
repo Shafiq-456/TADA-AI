@@ -1,6 +1,6 @@
 # 🚀 TADA AI – Autonomous Data Analyst & Business Intelligence Agent
 
-![TADA AI Banner](https://via.placeholder.com/1200x300?text=TADA+AI)
+
 
 ## 📊 Overview
 
