@@ -101,6 +101,7 @@ Authentication:
 
 * Local Authentication
 * Google OAuth Ready
+* Github Authentication
 
 ---
 
