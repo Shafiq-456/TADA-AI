@@ -1,4 +1,4 @@
-# 🚀 TADA AI – Autonomous Data Analysis & Business Intelligence Agent
+# 🚀 TADA AI – Autonomous Data Analysis & Business Intelligence Platform 
 
 
 
